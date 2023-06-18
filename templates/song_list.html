@@ -1,0 +1,8 @@
+<h2>Song List</h2>
+<ul>
+    {% for song in songs %}
+        <li>{{ song.title }} - {{ song.artist }}</li>
+    {% empty %}
+        <li>No songs available.</li>
+    {% endfor %}
+</ul>

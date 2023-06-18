@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>uploadpage</title>
+    </head>
+    <body>   <h2>Sucessfully logged in<h2>
+             <P>upload the adudio file below<p>
+            <form method = "post" enctype="multipart/form-data">
+             {%csrf_token%}
+             <input type = "file" name = "document">
+             <label for="id_privacy">Privacy:</label>
+             <select name="privacy" id="id_privacy">
+                 <option value="public">Public</option>
+                 <option value="private">Private</option>
+             </select>
+             <button>upload audio</button>
+            </form>
+            
+    </body>
+</html>
+

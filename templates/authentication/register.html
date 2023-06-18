@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Registration</title>
+    </head>
+    <body>
+            <h3> Register to access music</h3>
+            <form action= "/register" method = "post">
+            {% csrf_token %}
+            <label> Enter email</label>
+            <input type = "email", name = "email" placeholder = "nav@gmail.com">
+            <br>
+            <label>User name</label>
+            <input type = "text", name = "username" placeholder = "nav">
+            <br>
+            <label>create Password</label>
+            <input type = "password" name = "pass">
+            <br>
+            <button>Register</button>
+            </form>
+          
+    </body>
+</html>
+
